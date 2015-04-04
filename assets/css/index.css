@@ -239,14 +239,23 @@ header .logo {
 }
 header h1,
 header h2 {
+  color: #f86767;
+  display: inline-block;
   font-family: "Surveyor SSm A", "Surveyor SSm B";
   font-weight: 700;
   font-style: normal;
+  padding: 10px;
+  margin: 10px;
   font-size: 5rem;
-  margin: 100px 0 10px;
 }
 header h1 {
   font-weight: 800;
+}
+header h2 {
+  font-size: 2em;
+  line-height: 1.5em;
+  font-weight: 400;
+  font-size: $font-size-mega;
 }
 header .details {
   margin: 50px 0;
@@ -257,19 +266,6 @@ header .details span {
 }
 header .details .red {
   color: #f86767;
-}
-header h2 {
-  margin: 0 0 0px;
-  font-size: 2em;
-  font-weight: 400;
-  font-size: $font-size-mega;
-}
-header h1,
-header h2 {
-  color: #f86767;
-  display: inline-block;
-  padding: 10px;
-  margin: 10px;
 }
 header p {
   font-family: 'Surveyor SSm A', 'Surveyor SSm B';
@@ -319,7 +315,7 @@ header nav a .selected {
 @media (max-width: 480px) {
   header h2 {
     font-size: 1.5rem;
-    margin: 2.5rem 0 0.625rem 0;
+    margin: 1rem 2em 0.1rem 2em;
   }
   header p {
     min-width: 100%;
