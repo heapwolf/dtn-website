@@ -313,6 +313,9 @@ header nav a .selected {
   text-decoration: underline;
 }
 @media (max-width: 480px) {
+  header {
+    padding-top: 3rem;
+  }
   header h2 {
     font-size: 1.5rem;
     margin: 1rem 2em 0.1rem 2em;
