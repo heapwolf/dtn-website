@@ -1,0 +1,103 @@
+/*------------------------------------------------------------------------------
+*
+*  Header
+*
+------------------------------------------------------------------------------*/
+
+header
+  padding-top: 4rem
+  text-align: center
+  background: white
+  color: $dark-gray
+  
+  .logo
+    height: 80%
+    margin: 60px
+  
+  h1, h2
+    font-family: $font-Surveyor
+    font-weight: 700; font-style: normal
+    font-size: 5rem
+    margin: 100px 0 10px
+
+
+  h1
+    font-weight: 800
+
+  .details
+    margin: 50px 0
+
+    span
+      margin: 20px
+      text-transform: uppercase
+
+    .red
+      color: $red
+
+  h2
+    margin: 0 0 0px
+    font-size: 2em
+    font-weight: $font-weight-regular
+    font-size: $font-size-mega
+
+  h1, h2
+    color: $red
+    display: inline-block
+    padding: 10px
+    margin: 10px
+
+  p
+    font-family: 'Surveyor SSm A', 'Surveyor SSm B'
+    font-weight: 400; font-style: normal
+    color: white
+    font-size: 1.25em
+    line-height: 2em
+    font-style: italic
+    width: 100%
+    min-width: 680px
+    padding: 50px 20%
+    background: #1B2232
+    margin: 35px auto
+
+  .button
+    padding: 10px
+    padding-top: 13px
+    margin: 40px
+    width: 150px
+
+  div.language
+    position: absolute
+    top: 10px
+    left: 10px 
+    img
+      margin: 4px
+      float: left
+
+  nav
+    margin-top: 30px
+    text-align: center
+    li
+      display: inline
+      list-style: none
+    a
+      color: white
+      text-transform: uppercase
+      margin: 0 20px
+      
+      .selected
+        text-decoration: underline
+
+/* Responsive */
+
+@media $smartphone
+  header
+
+
+    h2
+      font-size: $font-size-h3
+      margin: 5.5rem 0 .625rem 0
+
+    p
+      min-width: 100%
+      font-size: $font-size-h4
+

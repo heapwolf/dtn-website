@@ -1,0 +1,27 @@
+{
+  "name": "dtn.is",
+  "version": "1.0.1",
+  "description": "This is source code for dtn.is",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run styles && npm run templates && node ./server.js",
+    "styles": "stylus ./styles/index.styl -o ./assets/css",
+    "templates": "jade ./templates/index.jade -o .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hij1nx/dtn.is.git"
+  },
+  "author": "YanMargolin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hij1nx/dtn.is/issues"
+  },
+  "homepage": "https://github.com/hij1nx/dtn.is",
+  "devDependencies": {
+    "jade": "^1.9.1",
+    "stylus": "^0.49.3",
+    "send": "^0.12.1"
+  }
+}
