@@ -1,4 +1,4 @@
-# COMPILE
+# COMPILE / DEVELOP
 ```
 npm start
 ```
