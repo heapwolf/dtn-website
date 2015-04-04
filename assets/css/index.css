@@ -319,7 +319,7 @@ header nav a .selected {
 @media (max-width: 480px) {
   header h2 {
     font-size: 1.5rem;
-    margin: 5.5rem 0 0.625rem 0;
+    margin: 2.5rem 0 0.625rem 0;
   }
   header p {
     min-width: 100%;
