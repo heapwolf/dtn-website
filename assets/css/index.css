@@ -189,7 +189,7 @@ ul.numbered li:not(:last-child) {
     padding: 0 0 50px;
   }
   .row {
-    margin: 10px;
+    margin: 40px;
   }
 }
 @media (min-width: 1024px) {
