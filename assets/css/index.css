@@ -217,6 +217,12 @@ ul.numbered li:not(:last-child) {
   }
 }
 @media (min-width: 1024px) {
+  .place {
+    padding-right: 8px;
+  }
+  .place:after {
+    content: "\2014";
+  }
   .content {
     width: 90%;
   }
@@ -349,6 +355,6 @@ header nav a .selected {
   header p {
     min-width: 100%;
     padding: 50px 20px;
-    font-size: 1.5rem;
+    font-size: 1.125rem;
   }
 }
