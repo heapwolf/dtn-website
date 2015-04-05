@@ -4,10 +4,14 @@
 *
 ------------------------------------------------------------------------------*/
 
-*, *:after, *:before
-  -moz-box-sizing: border-box
-  -webkit-box-sizing: border-box
+html
   box-sizing: border-box
+
+*,
+*:before,
+*:after
+  box-sizing: inherit
+
 
 ::-moz-selection
   background: $red
@@ -19,6 +23,14 @@
 
 html
   font-size: 100%
+
+@media $smartphone
+  html
+    font-size: 75%
+
+@media $tablet
+  html
+    font-size: 87.5%
 
 body
   font: 400 1rem/1.5 $font-Lora
@@ -68,5 +80,4 @@ h3
 
 h4
   font-size: $font-size-h4
-
 

@@ -1,9 +1,10 @@
-*,
-*:after,
-*:before {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
+html {
   box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 ::-moz-selection {
   background: #f86767;
@@ -15,6 +16,16 @@
 }
 html {
   font-size: 100%;
+}
+@media (max-width: 480px) {
+  html {
+    font-size: 75%;
+  }
+}
+@media (min-width: 481px) and (max-width: 1023px) {
+  html {
+    font-size: 87.5%;
+  }
 }
 body {
   font: 400 1rem/1.5 "Lora", serif;
@@ -93,6 +104,7 @@ body {
   background: #53677e;
   color: #fff;
   font-family: "Surveyor SSm A", "Surveyor SSm B";
+  border-bottom: 1em solid rgba(0,0,0,0.8);
 }
 .content .bird {
   text-align: center;
@@ -147,12 +159,12 @@ ul.numbered li:not(:last-child) {
   background-color: #fff;
 }
 .content section {
-  padding: 3.5rem 0;
+  padding: 5.5rem 0;
   position: relative;
 }
 @media (max-width: 1023px) {
   .content section {
-    padding: 1.5rem 0;
+    padding: 3.5rem 0;
   }
 }
 .content section:not(:last-child):before {
@@ -170,6 +182,7 @@ ul.numbered li:not(:last-child) {
 }
 .row {
   overflow: visible;
+  clear: both;
 }
 .single-column h3:first-of-type {
   margin-top: 0;
@@ -186,6 +199,9 @@ ul.numbered li:not(:last-child) {
     width: 100%;
   }
 }
+.figure {
+  margin-bottom: 3em;
+}
 @media (max-width: 1023px) {
   .content {
     width: 90%;
@@ -194,10 +210,10 @@ ul.numbered li:not(:last-child) {
   .column.third {
     float: none;
     width: 100%;
-    padding: 0 0 50px;
   }
   .row {
-    margin: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }
 @media (min-width: 1024px) {
@@ -208,7 +224,6 @@ ul.numbered li:not(:last-child) {
   .column.third {
     float: left;
     width: 50%;
-    padding: 0 0 100px;
   }
   .column.half.third,
   .column.third.third {
@@ -221,7 +236,8 @@ ul.numbered li:not(:last-child) {
     padding-left: 3rem;
   }
   .row {
-    margin: 50px auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media (min-width: 1200px) {
@@ -253,13 +269,16 @@ header h2 {
   font-weight: 700;
   font-style: normal;
   padding: 10px;
-  margin: 10px;
   font-size: 5rem;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 header h1 {
   font-weight: 800;
 }
 header h2 {
+  margin: 0 0 0px;
   font-size: 2em;
   line-height: 1.5em;
   font-weight: 400;
@@ -284,7 +303,6 @@ header p {
   line-height: 2em;
   font-style: italic;
   width: 100%;
-  min-width: 680px;
   padding: 50px 20%;
   background: #1b2232;
   margin: 35px auto;
@@ -321,15 +339,13 @@ header nav a .selected {
   text-decoration: underline;
 }
 @media (max-width: 480px) {
-  header {
-    padding-top: 3rem;
-  }
   header h2 {
     font-size: 1.5rem;
-    margin: 1rem 2em 0.1rem 2em;
+    margin: 5.5rem 0 0.625rem 0;
   }
   header p {
     min-width: 100%;
+    padding: 50px 10px;
     font-size: 1.125rem;
   }
 }

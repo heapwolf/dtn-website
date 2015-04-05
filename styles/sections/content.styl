@@ -2,6 +2,7 @@ body
   background: #53677e
   color: white
   font-family: $font-Surveyor
+  border-bottom: 1em solid $dark-gray
 
 .content
 
@@ -39,18 +40,18 @@ ul
   &.unstyled
     list-style-type: none
     padding: 0
-  
+
   &.numbered
     list-style-type: none
     counter-reset: count-list-items
-    
+
     li
       position: relative
       counter-increment: count-list-items
-      
+
       &:not(:last-child)
         padding-bottom: 1.5rem
-      
+
 .content
   margin: 80px auto
 
@@ -58,12 +59,11 @@ ul
     background-color: white
 
   section
-    padding: 3.5rem 0
+    padding: 5.5rem 0
     position: relative
-    
+
     @media $mobile-devices
-      padding: 1.5rem 0
-   
+      padding: 3.5rem 0
 
     &:not(:last-child):before
       content: ''
@@ -74,39 +74,45 @@ ul
       width: 30%
       margin-left: -(@width/2)
       background: $space-gray-lighter
-    
+
     h3 + p
       margin-top: .3125rem
 
 .row
   overflow: visible
- 
+  clear: both
+
 .single-column
-  
+
   h3:first-of-type
     margin-top: 0
 
   @media $desktop
     float: left
     width: 65%
-  
+
   @media $mobile-devices
     float: none
     width: 100%
+
+// each speaker / organizer block is a figure
+.figure
+  margin-bottom: 3em
+
 
 /* Responsive */
 
 @media $mobile-devices
   .content
     width: 90%
-    
+
   .column.half, .column.third
     float: none
     width: 100%
-    padding: 0 0 50px
 
   .row
-    margin: 40px
+    margin-left: 10px
+    margin-right: 10px
 
 @media $desktop
   .content
@@ -115,7 +121,6 @@ ul
   .column.half, .column.third
     float: left
     width: 50%
-    padding: 0 0 100px
 
     &.third
       width: 33.3%
@@ -124,12 +129,13 @@ ul
 
     &:first-of-type
       padding-right: 3rem
-      
+
     &:last-of-type
       padding-left: 3rem
 
   .row
-    margin: 50px auto
+    margin-left: auto
+    margin-right: auto
 
 @media $desktop-wide
   .content
