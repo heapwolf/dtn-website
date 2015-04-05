@@ -339,13 +339,16 @@ header nav a .selected {
   text-decoration: underline;
 }
 @media (max-width: 480px) {
+  header {
+    padding-top: 8rem;
+  }
   header h2 {
     font-size: 1.5rem;
-    margin: 5.5rem 0 0.625rem 0;
+    margin: 2.5rem 1em 1rem 1em;
   }
   header p {
     min-width: 100%;
-    padding: 50px 10px;
-    font-size: 1.125rem;
+    padding: 50px 20px;
+    font-size: 1.5rem;
   }
 }
