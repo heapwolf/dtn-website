@@ -356,5 +356,6 @@ header nav a .selected {
     min-width: 100%;
     padding: 50px 20px;
     font-size: 1.125rem;
+    margin-top: 50px;
   }
 }
