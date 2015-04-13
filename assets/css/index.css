@@ -158,6 +158,12 @@ ul.numbered li:not(:last-child) {
 .content a {
   background-color: #fff;
 }
+.content a.sponsor {
+  background-color: transparent;
+}
+.content a.sponsor img {
+  width: 80%;
+}
 .content section {
   padding: 5.5rem 0;
   position: relative;
