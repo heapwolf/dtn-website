@@ -164,6 +164,9 @@ ul.numbered li:not(:last-child) {
 .content a.sponsor img {
   width: 80%;
 }
+.content a.sponsor.hh img {
+  width: 50%;
+}
 .content section {
   padding: 5.5rem 0;
   position: relative;
