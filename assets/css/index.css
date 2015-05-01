@@ -164,6 +164,9 @@ ul.numbered li:not(:last-child) {
 .content a.sponsor img {
   width: 80%;
 }
+.content a.sponsor.qh img {
+  width: 20%;
+}
 .content a.sponsor.hh img {
   width: 50%;
 }
