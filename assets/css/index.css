@@ -101,8 +101,8 @@ button {
   background: #f52424;
 }
 body {
-  background: #53677e;
-  color: #fff;
+  background: #fff;
+  color: #000;
   font-family: "Surveyor SSm A", "Surveyor SSm B";
   border-bottom: 1em solid rgba(0,0,0,0.8);
 }
@@ -173,6 +173,10 @@ ul.numbered li:not(:last-child) {
 .content section {
   padding: 5.5rem 0;
   position: relative;
+}
+.content section.sponsors {
+  background: #888;
+  color: #fff;
 }
 @media (max-width: 1023px) {
   .content section {
@@ -270,18 +274,16 @@ footer {
   font-size: 0.8125rem;
 }
 header {
-  padding-top: 4rem;
   text-align: center;
   background: #fff;
   color: rgba(0,0,0,0.8);
 }
-header .logo {
-  height: 80%;
-  margin: 60px;
+header img.logo {
+  width: 75%;
 }
 header h1,
 header h2 {
-  color: #f86767;
+  color: #000;
   display: inline-block;
   font-family: "Surveyor SSm A", "Surveyor SSm B";
   font-weight: 700;
@@ -297,8 +299,8 @@ header h1 {
 }
 header h2 {
   margin: 0 0 0px;
-  font-size: 2em;
-  line-height: 1.5em;
+  font-size: 1.5em;
+  line-height: 1em;
   font-weight: 400;
   font-size: $font-size-mega;
 }
@@ -322,7 +324,7 @@ header p {
   font-style: italic;
   width: 100%;
   padding: 50px 20%;
-  background: #1b2232;
+  background: #000;
   margin: 35px auto;
 }
 header .button {
