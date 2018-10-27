@@ -1,0 +1,467 @@
+*
+  box-sizing border-box
+
+body
+  margin 0
+  padding 100px 30px 30px 30px
+  font normal 18px var(--body)
+  background-color var(--background)
+  @media $mobile
+    padding 0
+
+a
+  color black
+  text-decoration none
+  background-color transparent
+  &:hover
+    color white
+    font-style italic
+    background-color black
+
+h1
+  font normal 28px var(--subheader)
+  text-align center
+  text-transform uppercase
+  letter-spacing 6px
+  text-shadow 0px 0px 1px #000, 1px 3px 0px var(--background), 3px 7px 0px rgba(0,0,0,0.08)
+  @media $desktop
+    font normal 32px var(--subheader)
+
+h2
+  font 22px var(--subheader)
+  text-transform uppercase
+  letter-spacing 1px
+
+h3
+  font normal 28px/40px var(--geo)
+  text-transform uppercase
+  letter-spacing 5px
+  text-align center
+  @media $mobile
+    font normal 17px/32px var(--geo)
+
+.twitter
+  position fixed
+  top 120px
+  left 0
+  font 14px var(--body)
+  text-transform uppercase
+  letter-spacing 5px
+  transform rotate(-90deg)
+  @media $mobile
+    CenterX()
+    top 50px
+
+  a
+    color black
+    &:hover
+      color white
+      background-color black
+
+.top
+  position fixed
+  bottom 50px
+  right 50px
+  transition transform 0.2s ease
+  @media $mobile
+    display none
+  &:hover
+    transform translateY(-5px)
+
+  a
+    background-color transparent !important
+
+.button
+  color black
+  width 200px
+  font 600 15px var(--geo)
+  text-transform uppercase
+  text-align center
+  text-decoration none
+  letter-spacing 2px
+  padding 15px
+  margin 40px auto 0 auto
+  display block
+  border 3px solid black
+  &:hover
+    background-color black
+    border 3px solid black
+    color var(--background)
+
+.divider
+  width 2px
+  height 150px
+  margin 80px auto
+  background-color black
+  @media $mobile
+    height 100px
+    margin 50px auto
+
+.spin
+  transition transform 0.5s ease
+  margin-left 75%
+  margin-top -100px
+  @media $mobile
+    display none
+  &:hover
+    transform rotate(180deg)
+
+section
+  max-width 1000px
+  margin 0 auto
+  position relative
+
+section.intro
+  max-width 1200px
+  padding-bottom 20px
+
+  .menu
+    text-transform uppercase
+    letter-spacing 2px
+    font 12px/26px var(--body)
+    position absolute
+    top 50px
+    right 0
+    @media $mobile
+      display none
+
+    ul
+      width 175px
+      list-style none
+      margin 0
+      padding 4px
+
+  .title
+    font normal 60px/60px var(--header)
+    text-transform uppercase
+    letter-spacing 4px
+    padding 50px 0
+    margin-left 150px
+    text-shadow 4px 3px 0px var(--background), 9px 8px 0px rgba(0, 0, 0, 0.08)
+    @media $mobile
+      margin-left 50px
+      margin-top 60px
+      padding 50px 0 20px 0
+    @media $desktop
+      margin-left 100px
+      font normal 80px/80px var(--header)
+
+    img
+      width 45px
+      @media $desktop
+        width 60px
+
+    span
+      &:nth-of-type(2)
+        display block
+        margin-left 40px
+
+  .date
+    text-align center
+    font-style italic
+    &:hover
+      img
+        transform rotate(45deg)
+    @media $tablet
+      position absolute
+      left 15%
+      bottom 120px
+    @media $desktop
+      position absolute
+      left 180px
+      bottom 120px
+
+    img
+      transition transform 0.2s ease
+
+    span
+      display block
+      padding-bottom 5px
+
+  .venue
+    width 500px
+    margin-left 50%
+    border 1px solid black
+    text-align center
+    @media $tablet
+      width 40%
+    @media $mobile
+      width auto
+      margin 40px 20px 20px 20px
+
+    .image
+      width 100%
+      height 200px
+      position relative
+      filter grayscale(100%)
+      @media $desktop
+        height 250px
+      &:hover div:last-of-type
+        display none
+
+      div
+        &:first-of-type
+          Absolute(10px, 10px, 10px, 10px)
+          background-image url('/images/berlin.jpg')
+          background-size cover
+          background-position center
+        &:last-of-type
+          filter invert(100%)
+          Absolute(10px, 10px, 10px, 10px)
+          background-image url('/images/venue-bg.png')
+          background-size cover
+          background-position center
+
+    span
+      font 14px var(--geo)
+      text-transform uppercase
+      letter-spacing 2px
+      padding 10px
+      display block
+      border-top 1px solid black
+
+section.subheader
+  padding-top 50px
+  @media $desktop
+    padding 100px 0 100px 0
+
+  @media $tablet
+    h3
+      font normal 24px/36px var(--geo)
+
+  p
+    width 100%
+    max-width 520px
+    padding 0 50px
+    text-align center
+    margin 30px auto
+    @media $desktop
+      padding 0
+
+section.speakers
+  padding-top 50px
+  @media $desktop
+    padding-top 100px
+
+  .grid
+    margin-top 100px
+    margin-left 50px
+    display flex
+    flex-wrap wrap
+    justify-content space-between
+    @media $mobile
+      margin-top 50px
+      margin-left 30px
+    @media $tablet
+      max-width 700px
+      padding-left 50px
+      margin 60px auto
+
+.profile
+  flex-basis 30%
+  margin 20px 0
+  position relative
+  @media $tablet
+    flex-basis 50%
+  @media $mobile
+    flex-basis 100%
+
+  &:hover
+    .b2
+      display none
+
+  > div
+    display inline-block
+    vertical-align middle
+
+    &:first-of-type
+      Size(100px, 100px)
+      position relative
+      border 4px solid black
+
+      div
+        Absolute(0)
+        &.b2 img
+          width 100%
+
+  .info
+    CenterY()
+    left 120px
+
+    span
+      &:first-of-type
+        font 600 18px/20px var(--geo)
+        padding-bottom 5px
+        display block
+
+    .projects
+      font italic 16px var(--body)
+      display block
+
+section.coordinators
+  padding-top 50px
+  @media $tablet
+    padding-left 65px
+  @media $desktop
+    padding-top 150px
+
+  .grid
+    padding 10px 30px 0 30px
+    display flex
+    justify-content space-between
+    @media $mobile
+      display block
+    @media $tablet
+      max-width 700px
+      margin-left 100px
+    @media $desktop
+      width 750px
+      padding-left 90px
+      margin 100px auto 0 auto
+
+  .profile
+    flex-basis 50%
+    margin 30px 0
+    position relative
+    @media $desktop
+      margin 20px 0
+
+section.details
+  padding 30px
+  position relative
+  @media $desktop
+    padding 150px 0 0 0
+
+  a
+    width 250px
+    text-align center
+    margin 60px auto 0 auto
+    display block
+
+  img
+    margin 100px auto 0 auto
+    display block
+    transition transform 1s ease
+    &:hover
+      transform scale(1.1) rotate(20deg)
+    @media $desktop
+      margin 0
+      position absolute
+      top 100%
+      left -10%
+
+  h1
+    flex-basis 100%
+
+  h3
+    width 250px
+    font bold 15px var(--geo)
+    padding 0 20px
+    CenterX()
+    top -26px
+    background-color var(--background)
+
+  div
+    max-width 600px
+    padding 10px 20px
+    margin 60px auto 0 auto
+    position relative
+    border 1px solid black
+    @media $desktop
+      margin 100px auto 0 auto
+
+section.schedule
+  padding 30px
+  @media $desktop
+    padding 150px 0 0 0
+
+  .table
+    border 4px solid black
+    max-width 850px
+    margin 80px auto 0 auto
+    position relative
+    display flex
+    @media $mobile
+      display block
+    @media $tablet
+      max-width 600px
+
+    .col
+      flex-basis 50%
+
+    .col:first-of-type
+      border-right 4px solid black
+
+    @media $mobile
+      .col:last-of-type .row:first-of-type
+        border-top 4px solid black
+
+      .col:first-of-type
+        border-right 0
+
+    .col .row
+      padding 15px
+      border-bottom 1px solid black
+      &:first-of-type
+        font 600 16px var(--geo)
+        text-transform uppercase
+        letter-spacing 1px
+        border-bottom 4px solid black
+      &:last-of-type
+        border 0px
+
+  p
+    text-align center
+    margin-top 80px
+
+section.sponsors
+  padding-top 50px
+  @media $desktop
+    padding 150px 0 0 0
+
+  div
+    text-align center
+    margin 50px auto 0 auto
+    @media $mobile
+      text-align left
+    @media $desktop
+      margin 100px auto 0 auto
+
+  img
+    height 90px
+    display inline-block
+    margin 15px
+    @media $desktop
+      height 100px
+      margin 0 15px
+
+  a, a:hover
+    background-color transparent
+
+section.conduct
+  padding-top 20px
+  @media $desktop
+    padding 100px 0 0 0
+
+  div
+    padding 30px
+    max-width 700px
+    margin 0 auto
+    @media $desktop
+      margin 50px auto 0 auto
+      padding 0
+
+    img
+      display block
+
+    h2
+      margin 20px 20px 10px 20px
+
+    p
+      margin 0 20px
+
+footer
+  text-align center
+  margin 50px 0 80px 0
+  @media $desktop
+    margin 150px 0 80px 0
