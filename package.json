@@ -7,7 +7,7 @@
     "stylus": "^0.52.4"
   },
   "scripts": {
-    "watch": "stylus --watch ./src/styles/index.styl -o ./static/index.css"
+    "watch": "stylus --watch ./src/styles/index.styl -o ./index.css"
   },
   "repository": {
     "type": "git",
