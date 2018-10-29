@@ -2,7 +2,6 @@
   "name": "dtn",
   "version": "1.0.0",
   "description": "DTN Website",
-  "main": "index.js",
   "devDependencies": {
     "stylus": "^0.52.4"
   },
