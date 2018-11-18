@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/hxoht/dtn-website/issues"
   },
-  "homepage": "https://github.com/hxoht/dtn-website#readme"
+  "homepage": "https://github.com/hxoht/dtn-website#readme",
+  "dependencies": {
+    "send": "^0.16.2"
+  }
 }
