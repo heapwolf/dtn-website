@@ -598,19 +598,22 @@ section.sponsors {
     padding: 150px 0 0 0;
   }
 }
-section.sponsors div {
+section.sponsors > div {
   text-align: center;
   margin: 50px auto 0 auto;
 }
 @media (max-width: 700px) {
-  section.sponsors div {
+  section.sponsors > div {
     text-align: left;
   }
 }
 @media (min-width: 1070px) {
-  section.sponsors div {
+  section.sponsors > div {
     margin: 100px auto 0 auto;
   }
+}
+section.sponsors > div > div {
+  margin-top: 50px;
 }
 section.sponsors img {
   height: 90px;
