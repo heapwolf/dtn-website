@@ -29,6 +29,12 @@
     <meta name="twitter:title" content="Data Terra Nemo">
     <meta name="twitter:image" content="https://dtn.is/images/dtn-preview.jpg">
 
+    <link rel="preload" href="/images/funkhaus-1.png" as="image">
+    <link rel="preload" href="/images/funkhaus-2.png" as="image">
+    <link rel="preload" href="/images/funkhaus-3.png" as="image">
+    <link rel="preload" href="/images/funkhaus-4.png" as="image">
+    <link rel="preload" href="/images/funkhaus-5.png" as="image">
+
     <title>Data Terra Nemo</title>
   </head>
 
@@ -60,18 +66,77 @@
         </div>
 
         <div class="venue">
-          <div class="image">
-            <div></div>
-            <div></div>
+          <div class="venue-preview">
+            <div class="carousel-container">
+              <ul class="carousel my-carousel">
+                <input class="carousel__activator" type="radio" id="A" name="activator" checked="checked"/>
+                <input class="carousel__activator" type="radio" id="B" name="activator"/>
+                <input class="carousel__activator" type="radio" id="C" name="activator"/>
+                <input class="carousel__activator" type="radio" id="D" name="activator"/>
+                <input class="carousel__activator" type="radio" id="E" name="activator"/>
+                <div class="carousel__controls">
+                  <label class="carousel__control carousel__control--backward" for="E"></label>
+                  <label class="carousel__control carousel__control--forward" for="B"></label>
+                </div>
+                <div class="carousel__controls">
+                  <label class="carousel__control carousel__control--backward" for="A"></label>
+                  <label class="carousel__control carousel__control--forward" for="C"></label>
+                </div>
+                <div class="carousel__controls">
+                  <label class="carousel__control carousel__control--backward" for="B"></label>
+                  <label class="carousel__control carousel__control--forward" for="D"></label>
+                </div>
+                <div class="carousel__controls">
+                  <label class="carousel__control carousel__control--backward" for="C"></label>
+                  <label class="carousel__control carousel__control--forward" for="E"></label>
+                </div>
+                <div class="carousel__controls">
+                  <label class="carousel__control carousel__control--backward" for="D"></label>
+                  <label class="carousel__control carousel__control--forward" for="A"></label>
+                </div>
+                <li class="carousel__slide"></li>
+                <li class="carousel__slide"></li>
+                <li class="carousel__slide"></li>
+                <li class="carousel__slide"></li>
+                <li class="carousel__slide"></li>
+                <div class="carousel__indicators">
+                  <label class="carousel__indicator" for="A"></label>
+                  <label class="carousel__indicator" for="B"></label>
+                  <label class="carousel__indicator" for="C"></label>
+                  <label class="carousel__indicator" for="D"></label>
+                  <label class="carousel__indicator" for="E"></label>
+                </div>
+              </ul>
+            </div>
           </div>
-          <span>Berlin, Germany &bull; Venue TBA</span>
+          <span>Funkhaus Berlin &bull; Block B, Studio 4</span>
+        </div>
+      </section>
+
+      <section class="map">
+        <div class="map-preview">
+          <img src="/images/map.png">
+          <div>
+            <span>NALEPASTRAßE 18, 12459 BERLIN</span>
+            <a href="https://www.google.com/maps/place/Nalepastra%C3%9Fe+18,+12459+Berlin,+Germany/data=!4m2!3m1!1s0x47a84f2e5c1c7b65:0x5502e03c436f6e26?ved=2ahUKEwjkt-qEv4bgAhWJXSsKHY26AnQQ8gEwAHoECAIQAQ" target="_blank" rel="noopener">Map</a>
+          </div>
+        </div>
+        <div class="venue-description">
+          <h1>Funkhaus</h1>
+          <p><i>The second edition of DTN will be held in a beautiful 1950s-era recording studio in a former state radio broadcast centre, overlooking the River Spree.</i></p>
+          <hr>
+          <p><a href="http://www.funkhaus-berlin.net/">FUNKHAUS BERLIN</a>
+            <br>Block B &bull; Studio 4
+            <br>Nalepastraße 18
+            <br>12459 Berlin
+          </p>
         </div>
       </section>
 
       <section class="subheader">
         <h3>Terra nemo is a Latin expression<br>meaning “no man’s land”</h3>
         <div class="divider"></div>
-        <p><b>Data Terra Nemo</b> is a technical conference about decentralized protocols and the software built on top of them.</p>
+        <p><b>Data Terra Nemo</b> is a technical conference for hackers and computer scientists focused on distributed and decentralized systems.</p>
         <a href="https://ti.to/dtn/2019" class="button">Register</a>
       </section>
 
@@ -207,11 +272,15 @@
         <h1>Details</h1>
         <div>
           <h3>What to Expect</h3>
-          <p>Expect <i>subversive</i> and <i>unconventional</i> ideas that will challenge your thinking. Ideas focused on implementations. A small event designed to promote constructive discussions between everyone involved. Expect a group of people who share an interest in <i>securing the freedom of information</i> &amp; how we build systems around it.</p>
+          <p>Expect <i>subversive</i> and <i>unconventional</i> ideas that will challenge your thinking.
+            A small event designed to promote constructive discourse. Expect a group of people who share
+            an interest in building scalable, fault-tolerant, high-availability protocols and systems.</p>
         </div>
         <div>
           <h3>What's Included</h3>
-          <p>This is a <i>not-for-profit</i> event. All sponsorship pays for the conference itself. Aside from discussions and talks, attendees can expect <i>delicious food and coffee</i>. All talks and interviews will be recorded and published online after the event.</p>
+          <p>This is a <i>not-for-profit</i> event. All sponsorships and tickets pay for the conference itself.
+            Aside from discussions and talks, attendees can expect <i>delicious food and coffee</i>. All talks
+            and interviews will be recorded and published online after the event.</p>
         </div>
         <a href="2015.html" alt="See Previous DTN Conf (2015)">See Previous DTN Conf (2015)</a>
         <img src="/images/distributed.svg" width="100px">
@@ -246,16 +315,198 @@
       <section class="schedule" id="schedule">
         <h1>Schedule</h1>
 
-        <div class="table">
-          <div class="col">
-            <div class="row">Day 1</div>
-            <div class="row">Schedule TBA</div>
-          </div>
-          <div class="col">
-            <div class="row">Day 2</div>
-            <div class="row">Schedule TBA</div>
-          </div>
+        <div class="schedule-table">
+          <input type="radio" id="day1" name="schedule-picker" checked>
+          <label for="day1">Day 1</label>
+
+          <input type="radio" id="day2" name="schedule-picker">
+          <label for="day2">Day 2</label>
+
+          <div class="schedule-day one">
+            <div class="spacer">
+              <div class="time"></div>
+              <div class="event"></div>
+            </div>
+            <div class="row">
+              <div class="time">9:00</div>
+              <div class="event">
+                <h4>Doors open</h4>
+                <p><i>Coffee & Breakfast</i></p>
+                <span class="duration">30 mins</span>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="time">9:30</div>
+              <div class="event highlight">
+                 <h4>Juan Benet</h4>
+                 <p>Protocol Labs</p>
+                 <span class="duration">45 mins</span>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="time">10:45</div>
+              <div class="event highlight">
+                 <h4>Emin Gün Sirer</h4>
+                 <p>Cornell University</p>
+                 <span class="duration">45 mins</span>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="time">11:45</div>
+              <div class="event highlight">
+                 <h4>Paul Frazee</h4>
+                 <p>Beaker Browser</p>
+                 <span class="duration">45 mins</span>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="time">12:30</div>
+              <div class="event">
+                <p><i>Lunch</i></p>
+                <span class="duration">60 mins</span>
+              </div>
+            </div>
+
+             <div class="row">
+               <div class="time">13:15</div>
+               <div class="event highlight">
+                 <h4>Joseph Werle</h4>
+                 <p>Ara Blocks</p>
+                 <span class="duration">45 mins</span>
+               </div>
+             </div>
+
+             <div class="row">
+               <div class="time">14:30</div>
+               <div class="event highlight">
+                 <h4>Feross Aboukhadijeh</h4>
+                 <p>Web Torrent</p>
+                 <span class="duration">45 mins</span>
+               </div>
+             </div>
+
+             <div class="row">
+               <div class="time">15:45</div>
+               <div class="event highlight">
+                 <h4>Karissa McKelvey</h4>
+                 <p>Digital Democracy</p>
+                 <span class="duration">45 mins</span>
+               </div>
+             </div>
+
+             <div class="row">
+               <div class="time">17:00</div>
+               <div class="event highlight">
+                 <h4>Panel</h4>
+                 <h5>Known solutions for distributed systems problems</h5>
+                 <p>What tools and frameworks are there and how can we use them today? What are some of the apps we want to see in the future?</p>
+                 <p>Panelists: <i>Emil Bayes, Gina Giampaolo, André Staltz, Jan Lehnardt</i></p>
+                 <span class="duration">90 mins</span>
+               </div>
+             </div>
+           </div>
+
+          <div class="schedule-day two">
+            <div class="spacer">
+              <div class="time"></div>
+              <div class="event"></div>
+            </div>
+            <div class="row">
+              <div class="time">9:00</div>
+              <div class="event">
+                <h4>Coffee / Breakfast</h4>
+                <span class="duration">30 mins</span>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="time">9:30</div>
+              <div class="event highlight">
+                 <h4>Dominic Tarr</h4>
+                 <p>Secure Scuttlebutt</p>
+                 <span class="duration">45 mins</span>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="time">10:45</div>
+              <div class="event highlight">
+                 <h4>Gina Giampaolo</h4>
+                 <p>Rumors</p>
+                 <span class="duration">45 mins</span>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="time">11:45</div>
+              <div class="event highlight">
+                 <h4>Mathias Buus</h4>
+                 <p>Dat Project</p>
+                 <span class="duration">45 mins</span>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="time">12:30</div>
+              <div class="event">
+                <p><i>Lunch</i></p>
+                <span class="duration">60 mins</span>
+              </div>
+            </div>
+
+             <div class="row">
+               <div class="time">13:15</div>
+               <div class="event highlight">
+                 <h4>Sarah Friend</h4>
+                 <p>CirclesUBI</p>
+                 <span class="duration">45 mins</span>
+               </div>
+             </div>
+
+             <div class="row">
+               <div class="time">14:30</div>
+               <div class="event highlight">
+                 <h4>substack</h4>
+                 <p>bits.coop</p>
+                 <span class="duration">45 mins</span>
+               </div>
+             </div>
+
+             <div class="row">
+               <div class="time">15:45</div>
+               <div class="event highlight">
+                 <h4>Gonçalo Pestana</h4>
+                 <p>hashmatter</p>
+                 <span class="duration">45 mins</span>
+               </div>
+             </div>
+
+             <div class="row">
+               <div class="time">17:00</div>
+               <div class="event highlight">
+                 <h4>Panel</h4>
+                 <h5>Problems in distributed systems we need to solve</h5>
+                 <p>Consensus, replication, peer-discovery, broadening the contributor base.</p>
+                 <p>Panelists: <i>Panelists: Davis Dias, Emin Günsirer, Karissa McKelvey, Dominic Tarr, Mathias Buus</i></p>
+
+                 <span class="duration">90 mins</span>
+               </div>
+             </div>
+
+             <div class="row">
+               <div class="time">20:00</div>
+               <div class="event">
+                 <h4>Closing Party</h4>
+               </div>
+             </div>
+           </div>
+
         </div>
+
       </section>
 
       <section class="sponsors" id="sponsors">
