@@ -855,7 +855,7 @@ section.schedule .schedule-table .spacer {
   display: flex;
 }
 section.schedule .schedule-table .time {
-  flex-basis: 20%;
+  flex-basis: 22%;
   text-align: right;
   padding-right: 55px;
   margin: 10px 0;
