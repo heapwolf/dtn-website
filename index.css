@@ -46,8 +46,8 @@ body .carousel {
 }
 @media (max-width: 700px) {
   body .carousel {
-    width: 400px;
-    height: 250px;
+    width: 328px;
+    height: 240px;
   }
 }
 body .carousel__controls,
@@ -398,7 +398,7 @@ hr {
 @media (max-width: 700px) {
   .venue,
   .map-preview {
-    width: 422px;
+    width: 350px;
     margin: 40px auto 0 auto;
   }
 }
