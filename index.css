@@ -472,7 +472,7 @@ section.intro .menu {
   font: 12px/26px var(--body);
   position: absolute;
   top: 50px;
-  right: 50px;
+  right: 20px;
 }
 @media (max-width: 700px) {
   section.intro .menu {
