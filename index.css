@@ -420,6 +420,9 @@ hr {
 .profile:hover .b2 {
   display: none;
 }
+.profile:last-of-type > div {
+  border: 0 !important;
+}
 .profile > div {
   display: inline-block;
   vertical-align: middle;
