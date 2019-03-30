@@ -628,6 +628,7 @@ section.map .map-preview > div a {
 }
 section.subheader {
   padding-top: 50px;
+  text-align: center;
 }
 @media (min-width: 1070px) {
   section.subheader {
@@ -638,6 +639,10 @@ section.subheader {
   section.subheader h3 {
     font: normal 24px/36px var(--geo);
   }
+}
+section.subheader a {
+  display: inline-block;
+  margin-top: 30px;
 }
 section.subheader p {
   width: 100%;
