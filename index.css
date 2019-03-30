@@ -341,7 +341,7 @@ hr {
   background-color: transparent !important;
 }
 .button {
-  color: #000;
+  color: var(--background);
   width: 200px;
   font: 600 15px var(--geo);
   text-transform: uppercase;
@@ -351,10 +351,6 @@ hr {
   padding: 15px;
   margin: 40px auto 0 auto;
   display: block;
-  border: 3px solid #000;
-}
-.button:hover {
-  color: var(--background);
   background-color: #000;
   border: 3px solid #000;
 }
@@ -419,9 +415,6 @@ hr {
 }
 .profile:hover .b2 {
   display: none;
-}
-.profile:last-of-type > div {
-  border: 0 !important;
 }
 .profile > div {
   display: inline-block;

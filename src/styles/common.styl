@@ -81,7 +81,7 @@ hr
     background-color transparent !important
 
 .button
-  color black
+  color var(--background)
   width 200px
   font 600 15px var(--geo)
   text-transform uppercase
@@ -91,11 +91,8 @@ hr
   padding 15px
   margin 40px auto 0 auto
   display block
+  background-color black
   border 3px solid black
-  &:hover
-    color var(--background)
-    background-color black
-    border 3px solid black
 
 .divider
   Size(2px, 150px)
@@ -136,9 +133,6 @@ hr
 
   &:hover .b2
     display none
-
-  &:last-of-type > div
-    border 0 !important
 
   > div
     display inline-block
