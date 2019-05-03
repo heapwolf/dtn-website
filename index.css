@@ -925,16 +925,20 @@ section.sponsors > div > div {
     margin: 10px;
   }
 }
-section.sponsors img {
+section.sponsors img:not(.wireline) {
   height: 90px;
   display: inline-block;
   margin: 15px;
 }
 @media (min-width: 1070px) {
-  section.sponsors img {
+  section.sponsors img:not(.wireline) {
     height: 100px;
     margin: 0 15px;
   }
+}
+section.sponsors img.wireline {
+  height: 150px;
+  display: inline-block;
 }
 section.sponsors a,
 section.sponsors a:hover {

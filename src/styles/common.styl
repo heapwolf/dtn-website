@@ -542,13 +542,17 @@ section
         @media $mobile
           margin 10px
 
-    img
+    img:not(.wireline)
       height 90px
       display inline-block
       margin 15px
       @media $desktop
         height 100px
         margin 0 15px
+
+    img.wireline
+      height 150px
+      display inline-block
 
     a, a:hover
       background-color transparent
